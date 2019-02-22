@@ -1,3 +1,9 @@
+.disappear {
+  display: none;
+}
+.WidthF {
+  width: 100%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -173,38 +179,38 @@ p {
     width: 100%;
   }
 }
-.main-navigation .nav-container {
+.nav-container {
   width: 100%;
   margin: 0 auto;
   height: 100%;
   padding: 10px 10px;
 }
 @media (max-width: 500px) {
-  .main-navigation .nav-container {
+  .nav-container {
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 10px;
   }
 }
-.main-navigation .nav-container .nav {
+.nav-container .nav {
   height: 100%;
   display: flex;
   margin: 0 auto;
   justify-content: space-evenly;
 }
 @media (max-width: 500px) {
-  .main-navigation .nav-container .nav {
+  .nav-container .nav {
     width: 80%;
     justify-content: space-around;
   }
 }
-.main-navigation .nav-container .nav a {
+.nav-container .nav a {
   font-size: 1.5em;
   color: #454A59;
   text-decoration: none;
 }
 @media (max-width: 500px) {
-  .main-navigation .nav-container .nav a {
+  .nav-container .nav a {
     font-size: 1.5em;
   }
 }
@@ -309,4 +315,25 @@ footer {
   .home .space-images {
     display: none;
   }
+}
+.btn {
+  width: 100px;
+  height: 35px;
+  background-color: #22283A;
+  color: white;
+  cursor: pointer;
+  font-size: 1.8rem;
+  box-sizing: border-box;
+  padding-top: 7px;
+  text-align: center;
+  border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .btn {
+    width: 100%;
+  }
+}
+.btn:hover {
+  background: #B780F8;
+  color: #22283A;
 }

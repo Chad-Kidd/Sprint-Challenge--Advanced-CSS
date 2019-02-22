@@ -33,7 +33,7 @@
     padding: 15px;
 
     @media @phone {
-      display: none;
+      .disappear();
     }
 
     h3 {
@@ -66,7 +66,7 @@
         // margin: 15px;
         // padding: 15px;
         // width: 20%;
-        width: 100%;
+        .WidthF();
         padding: 20px;
         // order: 2
       }
@@ -88,12 +88,12 @@
       @media @phone {
         // display: none;
         // order: 1;
-        width: 100%;
+        .WidthF();
         padding: 0;
       }
       
       img { 
-        width: 100%;
+        .WidthF();
         height: auto;
         border-radius: 10px;
       }
@@ -103,23 +103,16 @@
 // IMG DISPLAY NONE
   .home .space-images {
     @media @phone {
-      display: none;
+      .disappear();
   }
 }
 
-// @media @phone {
-//   .blast img {
-//     display: block;
-//   }
-// }
+//BUTTON
 
-
-
-// .home .walk {
-// @media @phone {
-//   width: 90%;
-//   padding: 0;
-//   /* display: block; */
-//   flex-direction: column-reverse;
-// }
-// }
+.btn {
+  .button-creator(100px, 35px, @btn-bg-color, white, 1.8rem);   
+  box-sizing: border-box; 
+  padding-top: 7px;
+  text-align: center;
+  border-radius: 5px;
+}
