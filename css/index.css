@@ -256,11 +256,6 @@ footer {
 .home .visit-planets {
   padding: 15px;
 }
-@media (max-width: 500px) {
-  .home .visit-planets {
-    display: none;
-  }
-}
 .home .visit-planets h3 {
   margin-top: 11px;
 }
